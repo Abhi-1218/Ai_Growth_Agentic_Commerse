@@ -23,15 +23,29 @@ public class DatabaseBootstrap implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        boolean tablesExist = Boolean.TRUE.equals(jdbcTemplate.queryForObject(
-                "SELECT EXISTS (SELECT 1 FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'businesses')",
-                Boolean.class
-        ));
+        boolean tablesExist = false;
+        try {
+            Integer count = jdbcTemplate.queryForObject(
+                    "SELECT count(*) FROM information_schema.tables WHERE lower(table_name) = 'businesses'",
+                    Integer.class
+            );
+            tablesExist = count != null && count > 0;
+        } catch (Exception e) {
+            tablesExist = false;
+        }
 
         if (!tablesExist) {
             ClassPathResource resource = new ClassPathResource("schema.sql");
             String sql = StreamUtils.copyToString(resource.getInputStream(), StandardCharsets.UTF_8);
-            jdbcTemplate.execute(sql);
+            for (String statement : sql.split(";")) {
+                String trimmed = statement.trim();
+                if (!trimmed.isEmpty()) {
+                    try {
+                        jdbcTemplate.execute(trimmed);
+                    } catch (Exception ignored) {
+                    }
+                }
+            }
             return;
         }
 

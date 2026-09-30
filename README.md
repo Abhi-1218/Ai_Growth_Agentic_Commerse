@@ -1,5 +1,9 @@
 # GrowthPilot AI — Agentic Commerce Growth Platform
 
+> 🚀 **Live Demo:** [https://ai-growth-agentic-commerse.vercel.app](https://ai-growth-agentic-commerse.vercel.app)  
+> 🔑 **You can check with demo credentials using email- `admin@techmart.in` and password is - `@growth`**  
+> *(Pre-seeded with complete e-commerce telemetry, 50 customers, 30 products, 147 orders, and AI copilot)*
+
 [![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.4.1-6DB33F?logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
 [![React](https://img.shields.io/badge/React-19.2-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)

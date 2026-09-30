@@ -29,7 +29,7 @@ export const LoginPage: React.FC = () => {
 
   const handleDemoFill = () => {
     setEmail('admin@techmart.in');
-    setPassword('password123');
+    setPassword('@growth');
   };
 
   return (

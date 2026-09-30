@@ -11,6 +11,16 @@
 
 ---
 
+> ### 🚀 Live Web App & Demo Evaluation
+> - **Live Application URL:** [https://ai-growth-agentic-commerse.vercel.app](https://ai-growth-agentic-commerse.vercel.app)
+> - **Demo Email:** `admin@techmart.in`
+> - **Demo Password:** `@growth` (or `password123`)
+> - **Pre-seeded Company:** `TechMart India` (Loaded with 50 active/VIP customers, 30 products, 147 orders, 85 Lakhs+ revenue telemetry, abandoned carts, and autonomous AI recommendations)
+> 
+> 💡 *Quick Access: On the login page, you can also simply click the **"Fill Demo Credentials"** button to log in with one click and explore the live platform!*
+
+---
+
 ## 🌟 Key Features
 
 1. **Autonomous Commerce Growth Copilot**: Real-time conversational agent capable of querying store metrics, detecting high-value abandoned carts, and proposing actionable decision cards directly in chat.
@@ -189,11 +199,11 @@ npm run dev
 ---
 
 ## 🔑 Demo Credentials
-
+ 
 | Role | Email | Password |
 | :--- | :--- | :--- |
-| **Administrator** | `admin@techmart.in` | `password123` |
-| **Growth Manager** | `manager@techmart.in` | `password123` |
+| **Administrator** | `admin@techmart.in` | `@growth` *(or `password123`)* |
+| **Growth Manager** | `manager@techmart.in` | `@growth` *(or `password123`)* |
 
 *(A 1-click **"Fill Demo Credentials"** button is provided on the Login Page for instant evaluation)*
 

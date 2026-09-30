@@ -2,7 +2,7 @@ FROM eclipse-temurin:22-jdk-alpine
 WORKDIR /app
 COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
-RUN ./mvnw dependency:go-offline
+RUN chmod +x ./mvnw
 COPY src ./src
 RUN ./mvnw package -DskipTests
 EXPOSE 8080
